@@ -63,7 +63,7 @@ local function sortLargeToSmall(array)
     for i=1,#array-1 do
         local maxidx = i
         for j=i+1,#array do
-            if (array[j] > array[maxidx]) then
+            if (tonumber(array[j]) > tonumber(array[maxidx])) then
                 maxidx = j
             end
         end
